@@ -206,7 +206,7 @@ public class Client extends javax.swing.JFrame {
             jLabel3.setText("Global");
         }
         else{
-            jLabel3.setText("Đăng nhắn với "+jComboBox1.getSelectedItem());
+            jLabel3.setText("Đang nhắn với "+jComboBox1.getSelectedItem());
         }
     }//GEN-LAST:event_jComboBox1ActionPerformed
 
