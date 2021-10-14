@@ -195,6 +195,8 @@ public class Client extends javax.swing.JFrame {
             try {
                 String[] parner = ((String)jComboBox1.getSelectedItem()).split(" ");
                 write("send-to-person"+","+messageContent+","+this.id+","+parner[1]);
+                jTextArea1.setText(jTextArea1.getText()+"Client "+this.id+" (tới Client "+parner[1]+"): "+messageContent+"\n");
+                jTextArea1.setCaretPosition(jTextArea1.getDocument().getLength());
             } catch (IOException ex) {
                 JOptionPane.showMessageDialog(rootPane, "Có lỗi xảy ra");
             }
