@@ -193,7 +193,8 @@ public class Client extends javax.swing.JFrame {
             }
         }else{
             try {
-                write("send-to-person"+","+messageContent+","+this.id+","+jComboBox1.getSelectedItem());
+                String[] parner = ((String)jComboBox1.getSelectedItem()).split(" ");
+                write("send-to-person"+","+messageContent+","+this.id+","+parner[1]);
             } catch (IOException ex) {
                 JOptionPane.showMessageDialog(rootPane, "Có lỗi xảy ra");
             }
