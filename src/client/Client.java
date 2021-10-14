@@ -40,6 +40,8 @@ public class Client extends javax.swing.JFrame {
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setLocationRelativeTo(null);
         this.setVisible(true);
+        jTextArea1.setEditable(false);
+        jTextArea2.setEditable(false);
         onlineList = new ArrayList<>();
         setUpSocket();
         id = -1;
