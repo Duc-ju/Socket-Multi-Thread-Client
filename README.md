@@ -1,5 +1,5 @@
-# Socket-MutilThread-Client
-There are two parts of this project
+# Chat app with socket using mutilthread and build by client/server model
+There are two parts of this project.
 Link of server side https://github.com/Duc-ju/Socket-MutilThread-Server
 -----
 Socket packet in Java doesn't support us with thread management so I write some more classes in the project to handle that.
