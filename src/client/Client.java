@@ -234,7 +234,7 @@ public class Client extends javax.swing.JFrame {
                         is = new BufferedReader(new InputStreamReader(socketOfClient.getInputStream()));
                         String message;
                         while (true) {
-                            onlineList = new ArrayList<>();
+                            
                             message = is.readLine();
                             if(message==null){
                                 break;
@@ -245,6 +245,7 @@ public class Client extends javax.swing.JFrame {
                                 setIDTitle();
                             }
                             if (messageSplit[0].equals("update-online-list")) {
+                                onlineList = new ArrayList<>();
                                 String online ="";
                                 String[] onlineSplit = messageSplit[1].split("-");
                                 for(int i=0; i<onlineSplit.length; i++){
